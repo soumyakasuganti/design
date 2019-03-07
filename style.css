@@ -2,9 +2,23 @@
   box-sizing: border-box;
   }
   
-p {
+body {
+  margin: 2em 10em;
   font-family: eskorte-latin, serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
+}
+
+nav li {
+}
+
+nav logo {
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.25em;
+  max-width: 21em;
   }
   
