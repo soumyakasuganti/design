@@ -67,12 +67,12 @@ p.intro {
 
   /* ----- */
   /* Footer */
-/*.social {
+.social-home {
   position:absolute;
   bottom: 1em;
-*/
+}
 
-.social li {
+.social li, .social-home li {
   display: inline-block;
   font-size: 0.85em;
   padding-right: 1em;
