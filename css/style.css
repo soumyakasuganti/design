@@ -64,6 +64,12 @@ p.intro {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
   }
+  hr {
+    border: solid 3px #000;
+    max-width: 25%;
+    margin-bottom: 6em;
+    /*transform: rotate(45deg);*/
+  }
 
   /* ----- */
   /* Footer */
@@ -84,11 +90,20 @@ p.intro {
   text-decoration: none;
 }
 /* ----- */
-@media (min-width: 600px) {
+@media (min-width: 560px) {
+  .project-intro {
+    font-size: 1.35em;
+  }
+}
+/* ----- */
+@media (min-width: 720px) {
   p.intro {
     font-size: 1.8em;
   }
-  .main .intro, .main .mocks {
+  .project-intro {
+    font-size: 1.15em;
+  }
+  .main .introduction, .main .mocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
@@ -97,11 +112,16 @@ p.intro {
     padding-right: 2em;
   }
 }
-/* ----- */
 @media (min-width: 900px) {
   .project-intro {
+    font-size: 1.35em;
+  }
+  .main .introduction {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+@media (min-width: 1200px) {
+  .project-intro {
     font-size: 1.5em;
-    line-height: 1.35;
-    padding-bottom: 1rem;
   }
 }
