@@ -159,14 +159,14 @@ p.intro {
   .project-intro:last-child {
     padding: 0;
   }
-  /*small {
+  small {
     font-size: .8em;
     font-family: eskorte-latin, serif;
     color: #aaa;
     display: block;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
-  }*/
+  }
   hr {
     border: solid 3px #000;
     max-width: 25%;
