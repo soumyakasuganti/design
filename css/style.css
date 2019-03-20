@@ -48,7 +48,7 @@ nav li {
   opacity: 0.75;
 }
 .logo {
-  padding-right: .25em;
+  padding-right: .1em;
   /*opacity: 0.5;*/
 }
 nav li a {
@@ -73,7 +73,7 @@ p.intro {
   font-family: 'Abril Fatface', eskorte-latin, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.4em;
   max-width: 15em;
   margin-bottom: 1em;
@@ -82,9 +82,9 @@ p.intro {
   .message {
     color: #6B6B6B;
     font-family: hind, sans-serif;
-    font-size: 1.25em;
-    line-height: 1.25;
-    margin-bottom: 2rem;
+    /*font-size: 1em;*/
+    line-height: 1.5;
+    margin-bottom: 4.5em;
   }
   /* ----- */
   /* Work Page */
@@ -98,8 +98,8 @@ p.intro {
     margin-bottom: 1em;
   }
   .work-grid h2 {
-    font-size: 2.5em;
-    line-height: 1.15;
+    font-size: 2em;
+    line-height: 1.1;
   }
   .work-grid a {
     text-decoration: none;
@@ -124,7 +124,7 @@ p.intro {
     color: #000;
     display: block;
     font-family: hind, sans-serif;
-    font-size: 0.94em;
+    font-size: 0.65em;
     margin-top: 0.75rem;
   }
 
@@ -133,7 +133,7 @@ p.intro {
   /* Project Pages */
   .project-title {
     font-family: 'Abril Fatface', serif;
-    font-size: 72px;
+    font-size: 2em;
     margin-bottom:4.5rem;
   }
   section {
@@ -196,7 +196,7 @@ p.intro {
 }
 .right {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 /* ----- */
@@ -226,10 +226,13 @@ p.intro {
 /* ----- */
 @media (min-width: 720px) {
   p.intro {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .project-intro, .project-paragraph p {
     font-size: 1.15em;
+  }
+  .project-title {
+    font-size: 2.5em;
   }
   .introduction, .mocks, .project-paragraph {
     display: grid;
@@ -242,7 +245,7 @@ p.intro {
     grid-gap: 1.5rem;
   }
   .work-grid h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
   /*.work-grid {
     display: grid;
