@@ -20,7 +20,7 @@ img {
 a {
   color: inherit; /* There needs to be more of a signal that this is clickable */
   text-decoration-style: dotted;
-  text-decoration-color: #6B6B6B;
+  text-decoration-color: #6B6B6B; /* Use variables for colours!  */
   /*opacity: 0.5;*/
   /*border-bottom: 3px solid #aaa;*//
   /*background: -webkit-linear-gradient(Top, white 80%, gray 20%);
@@ -84,7 +84,8 @@ p.intro {
     font-family: hind, sans-serif;
     /*font-size: 1em;*/
     line-height: 1.5;
-    margin-bottom: 4.5em;
+    margin-bottom: 1.5em;
+    margin-top: 4.5em;
   }
   /* ----- */
   /* Work Page */
@@ -160,7 +161,7 @@ p.intro {
     padding: 0;
   }
   small {
-    font-size: .8em;
+    font-size: 1rem;
     font-family: eskorte-latin, serif;
     color: #aaa;
     display: block;
