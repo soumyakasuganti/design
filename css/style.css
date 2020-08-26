@@ -5,8 +5,8 @@
 /* General */
 body {
   background-color: #f5f5f5;
-  /*font-family: hind, sans-serif;*/
-  font-family: eskorte-latin, serif;
+  font-family: hind, sans-serif;
+  /*font-family: eskorte-latin, serif;*/
   font-weight: 400;
   font-style: normal;
   width: 90%;
@@ -19,15 +19,9 @@ img {
 }
 
 a {
-  color: inherit; /* There needs to be more of a signal that this is clickable */
+  color: inherit;
   text-decoration-style: dotted;
-  text-decoration-color: #6B6B6B; /* Use variables for colours!  */
-  /*opacity: 0.5;*/
-  /*border-bottom: 3px solid #aaa;*//
-  /*background: -webkit-linear-gradient(Top, white 80%, gray 20%);
-    background: -moz-linear-gradient(Top, white 80%, gray 20%);
-    background: -ms-linear-gradient(Top, white 80%, gray 20%);
-    background: linear-gradient(Top, white 80%, gray 20%);*/
+  text-decoration-color: #6B6B6B;
 }
 a:hover {
   opacity:0.5;
@@ -73,7 +67,8 @@ p.intro {
   /*color: #DA2323;*/
   /* font-family: 'Abril Fatface', eskorte-latin, serif; */
   /*font-family: 'Bitter', eskorte-latin, serif;*/
-  font-weight: 600;
+  font-family: 'Lato', hind, sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 2em;
   line-height: 1.4em;
@@ -92,7 +87,7 @@ p.intro {
   /* ----- */
   /* Work Page */
   .work-grid {
-    font-family: 'Abril Fatface', eskorte-latin, serif;
+    /*font-family: 'Abril Fatface', eskorte-latin, serif;*/
   }
   .work-grid div {
     margin-bottom: 4.5em;
@@ -102,6 +97,7 @@ p.intro {
   }
   .work-grid h2 {
     font-size: 2em;
+    font-weight: 700;
     line-height: 1.1;
   }
   .work-grid a {
@@ -126,8 +122,9 @@ p.intro {
   .project-subtitle {
     color: #000;
     display: block;
-    font-family: hind, sans-serif;
+    /*font-family: hind, sans-serif;*/
     font-size: 0.65em;
+    font-weight: 400;
     margin-top: 0.75rem;
   }
 
@@ -154,11 +151,9 @@ p.intro {
     line-height: 1.3;
     padding-bottom: 0.5rem;
   }
-
   .project-paragraph {
     margin-bottom: 3rem;
   }
-
   .project-intro:last-child {
     padding: 0;
   }
@@ -173,7 +168,7 @@ p.intro {
   hr {
     border: solid 3px #000;
     max-width: 25%;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     /*transform: rotate(45deg);*/
   }
 
@@ -208,7 +203,8 @@ p.intro {
     font-size: 1.35em;
   }
   .work-grid div {
-    max-width: 48em;
+    width: 50%;
+    /*max-width: 48em;*/
   }
   .work-grid h2 {
     line-height: 1.05;
@@ -248,7 +244,7 @@ p.intro {
     grid-gap: 1.5rem;
   }
   .work-grid h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   /*.work-grid {
     display: grid;
