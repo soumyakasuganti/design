@@ -1,62 +1,30 @@
 * {
   box-sizing: border-box;
   }
-
-/* ---------------------------
-General
- ---------------------------*/
+/* ----- */
+/* General */
 body {
-  background: #F6F6f6 url(/assets/images/paper-tile.jpg);
-  color: #222;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 1.25em;
+  background-color: #f5f5f5;
+  font-family: hind, sans-serif;
+  /*font-family: eskorte-latin, serif;*/
   font-weight: 400;
-  line-height: 1.5em;
-  margin: auto;
-  max-width: 1280px;
+  font-style: normal;
   width: 90%;
+  margin: 2em auto;
+  max-width: 1200px;
 }
 
-main:first-child {
-  padding-top: 1em;
-}
-#intro {
-  padding-bottom: 2em;
-}
 img {
-  /*border-radius: 1px;*/
-  width: 100%;
-}
-
-.full-width-img {
-  margin-top: 2em;
-}
-@media (min-width: 800px) {
-  .full-width-img {
-    margin-top: 4em;
-  }
-  main:first-child {
-    padding-top: 0;
-  }
-  #intro {
-    padding-bottom: 0;
-  }
-}
-
-
-.caption {
-  color: #777;
-  font-size: .85em;
-  font-weight: 300;
-  margin-top: 1em;
+  max-width: 100%;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration-style: dotted;
+  text-decoration-color: #6B6B6B;
 }
 a:hover {
-  opacity:0.75;
+  opacity:0.5;
   text-decoration: underline;
   transition: text-decoration 0.1s, color 0.1s;
 }
@@ -64,94 +32,251 @@ a:focus {
   border: none;
   border-bottom: inherit;
 }
-
-
-h3{
-  font-weight: 600;
+/* ----- */
+/* Top Navigation */
+body > nav {
+  margin-bottom: 6em;
+}
+nav li {
+  color: #6B6B6B;
+  display: inline-block;
+  opacity: 0.75;
+}
+.logo {
+  padding-right: .1em;
+  /*opacity: 0.5;*/
+}
+nav li a {
+  color: #6B6B6B;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #000;
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.1s;
+}
+.header hr {
+  opacity: 0.15;
+  max-width: 8rem;
 }
 
-/* ---------------------------
-Header
---------------------------- */
-nav {
-  font-size: .85em;
-  margin: 2em 0;
-}
-
-nav a {
-  color: #af0059;
-}
-
-nav ul li {
-  display: inline;
-}
-
-/* ---------------------------
-Work Page
---------------------------- */
-div.workthumbs {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2.4em 1.6em;
-}
-
-div.projectdetails {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.workthumbs, .projectdetails{
-  margin-top: 2em;
-}
-
-.title-wrap {
-  margin-top: .5em;
-}
-
-.title-wrap span {
-  font-weight: 300;
-}
-
-hr {
-  border: solid 2px #222;
-  max-width: 40%;
-  margin: 4em 0 2em 0;
-}
-
-#storybook {
-  margin-top: 2.4em;
-}
-
-@media (min-width: 800px) {
-  .workthumbs, .projectdetails{
-    margin-top: 4em;
+/* ----- */
+/* Home page, intro paragraph */
+p.intro {
+  /*color: #DA2323;*/
+  /* font-family: 'Abril Fatface', eskorte-latin, serif; */
+  /*font-family: 'Bitter', eskorte-latin, serif;*/
+  font-family: 'Lato', hind, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.4em;
+  max-width: 15em;
+  margin-bottom: 1em;
+  /*margin-top: 4em;*/
   }
-  div.workthumbs , div.projectdetails {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2.4em 1.6em;
+  .message {
+    color: #6B6B6B;
+    /*font-family: hind, sans-serif;*/
+    /*font-size: 1em;*/
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    margin-top: 4.5em;
+  }
+  /* ----- */
+  /* Work Page */
+  .work-grid {
+    /*font-family: 'Abril Fatface', eskorte-latin, serif;*/
+  }
+  .work-grid div {
+    margin-bottom: 4.5em;
+  }
+  .work-grid img {
+    margin-bottom: 1em;
+  }
+  .work-grid h2 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .work-grid a {
+    text-decoration: none;
+  }
+  .work-grid a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .bw {
+    color: #5498D4;
+  }
+  .augl {
+    color: #D9435E;
+  }
+  .bath {
+    color: #F68026;
+  }
+  .ctc {
+    color: #4D71A4;
+  }
+  .project-subtitle {
+    color: #000;
+    display: block;
+    /*font-family: hind, sans-serif;*/
+    font-size: 0.65em;
+    font-weight: 400;
+    margin-top: 0.75rem;
+  }
+
+
+  /* ----- */
+  /* Project Pages */
+  .project-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2em;
+    margin-bottom:4.5rem;
+  }
+  section {
+    margin-bottom: 4.5rem;
+  }
+  .project img {
+    margin-bottom: 1.5rem;
+  }
+  .phone {
+    float: right;
+    max-width: 50%;
+  }
+  .project-intro, .project-paragraph p {
+    font-size: 1.15em;
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+  }
+  .project-paragraph {
+    margin-bottom: 3rem;
+  }
+  .project-intro:last-child {
+    padding: 0;
+  }
+  small {
+    font-size: 1rem;
+    font-family: eskorte-latin, serif;
+    color: #aaa;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   hr {
+    border: solid 3px #000;
     max-width: 25%;
+    margin-bottom: 1em;
+    /*transform: rotate(45deg);*/
   }
-  #storybook {
-    margin-top: 0;
-  }
+
+  /* ----- */
+  /* Footer */
+
+
+.social li {
+  color: #6B6B6B;
+  opacity: 0.5;
+  display: inline-block;
+  font-size: 0.85em;
+  padding-right: 1em;
 }
 
-@media (min-width: 1400px) {
-  div.workthumbs , div.projectdetails { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.social li:last-child {
+  padding-right: 0;
 }
 
+.social a {
+  color: inherit;
+  text-decoration: none;
+}
+.right {
+  display: block;
+  margin-bottom: 0.2em;
+}
 
-
-
-/* ---------------------------
-Footer
---------------------------- */
-
-footer {
-  color: #777;
-  font-weight:300;
-  font-size: .85em;
-  margin: 4em 0 2em 0;
+/* ----- */
+@media (min-width: 560px) {
+  .project-intro, .project-paragraph p {
+    font-size: 1.35em;
+  }
+  .work-grid div {
+    width: 50%;
+    /*max-width: 48em;*/
+  }
+  .work-grid h2 {
+    line-height: 1.05;
+  }
+  /*.project-subtitle {
+    display: inline;
+  }
+  */
+  .right {
+    float: right;
+  }
+  .home-footer {
+    position:absolute;
+    bottom: 1em;
+    width: 80%;
+  }
+}
+/* ----- */
+@media (min-width: 720px) {
+  p.intro {
+    font-size: 2.5em;
+  }
+  .project-intro, .project-paragraph p {
+    font-size: 1.15em;
+  }
+  .project-title {
+    font-size: 2.5em;
+  }
+  .introduction, .mocks, .project-paragraph {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .future-bath {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .work-grid h2 {
+    font-size: 2em;
+  }
+  /*.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    grid-row-gap: 4.5em;
+  }
+  .work-grid div {
+    margin-bottom: 0;
+  }*/
+  .future-bathroom {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1.5rem;
+  }
+  .project img {
+    margin-bottom: 0;
+  }
+  .social li {
+    padding-right: 2em;
+  }
+}
+@media (min-width: 900px) {
+  .project-intro, .project-paragraph p {
+    font-size: 1.35em;
+  }
+  .main .introduction {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+@media (min-width: 1200px) {
+  .project-intro {
+    font-size: 1.5em;
+  }
 }
