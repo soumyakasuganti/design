@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  }
+
+/* ---------------------------
+General
+ ---------------------------*/
+body {
+  background: #F6F6f6 url(/assets/images/paper-tile.jpg);
+  color: #222;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+main:first-child {
+  padding-top: 1em;
+}
+#intro {
+  padding-bottom: 2em;
+}
+img {
+  /*border-radius: 1px;*/
+  width: 100%;
+}
+
+.full-width-img {
+  margin-top: 2em;
+}
+@media (min-width: 800px) {
+  .full-width-img {
+    margin-top: 4em;
+  }
+  main:first-child {
+    padding-top: 0;
+  }
+  #intro {
+    padding-bottom: 0;
+  }
+}
+
+
+.caption {
+  color: #777;
+  /*
+  font-family: ff-more-web-pro, serif;
+  font-style: italic;
+  */
+  font-size: .85em;
+  font-weight: 300;
+  /*
+  letter-spacing: .5px;
+  */
+  margin-top: 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity:0.75;
+  text-decoration: underline;
+  transition: text-decoration 0.1s, color 0.1s;
+}
+a:focus {
+  border: none;
+  border-bottom: inherit;
+}
+
+
+h3{
+  font-weight: 600;
+}
+
+/* ---------------------------
+Header
+--------------------------- */
+nav {
+  /*font-weight: 600;*/
+  font-size: .85em;
+  margin: 2em 0;
+}
+
+nav a {
+  color: #af0059;
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* ---------------------------
+Work Page
+--------------------------- */
+div.workthumbs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.4em 1.6em;
+}
+
+div.projectdetails {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.workthumbs, .projectdetails{
+  margin-top: 2em;
+}
+
+.title-wrap {
+  margin-top: .5em;
+}
+
+.title-wrap span {
+  font-weight: 300;
+}
+
+hr {
+  border: solid 2px #222;
+  max-width: 40%;
+  margin: 4em 0 2em 0;
+}
+
+@media (min-width: 800px) {
+  .workthumbs, .projectdetails{
+    margin-top: 4em;
+  }
+  div.workthumbs , div.projectdetails {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.4em 1.6em;
+  }
+  hr {
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 1400px) {
+  div.workthumbs , div.projectdetails { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+
+
+
+
+/* ---------------------------
+Footer
+--------------------------- */
+
+footer {
+  color: #777;
+  font-weight:300;
+  font-size: .85em;
+  margin: 4em 0 2em 0;
+}
