@@ -138,9 +138,9 @@ hr {
   }
 }
 
-/*@media (min-width: 1400px) {
-  div.workthumbs , div.projectdetails { grid-template-columns: 1fr 1fr 1fr 1fr; }
-}*/
+@media (min-width: 1336px) {
+  div.workthumbs { grid-template-columns: 1fr 1fr 1fr; }
+}
 
 
 
