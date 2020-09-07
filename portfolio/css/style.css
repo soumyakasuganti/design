@@ -89,7 +89,11 @@ nav ul li {
 /* ---------------------------
 Work Page
 --------------------------- */
-div.workthumbs {
+#intro h1{
+  font-weight: 300;
+}
+
+  div.workthumbs {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.4em 1.6em;
