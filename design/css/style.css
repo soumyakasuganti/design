@@ -38,9 +38,9 @@ img {
   main:first-child {
     padding-top: 0;
   }
-  #intro {
+  /*#intro {
     padding-bottom: 0;
-  }
+  }*/
 }
 
 
@@ -89,7 +89,11 @@ nav ul li {
 /* ---------------------------
 Work Page
 --------------------------- */
-div.workthumbs {
+#intro h1{
+  font-weight: 300;
+}
+
+  div.workthumbs {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.4em 1.6em;
@@ -138,9 +142,14 @@ hr {
   }
 }
 
-/*@media (min-width: 1400px) {
-  div.workthumbs , div.projectdetails { grid-template-columns: 1fr 1fr 1fr 1fr; }
-}*/
+@media (min-width: 1336px) {
+  div.workthumbs { grid-template-columns: 1fr 1fr 1fr; }
+  #intro h1{
+    font-size: 1.2em;
+    grid-column: 1 / span 2;
+    line-height: 1.5em;
+  }
+}
 
 
 
