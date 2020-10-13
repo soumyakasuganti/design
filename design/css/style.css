@@ -6,7 +6,8 @@
 General
  ---------------------------*/
 body {
-  background: #F6F6f6 url(/assets/images/paper-tile.jpg);
+  /*background: #F6F6f6 url(/assets/images/paper-tile.jpg);*/
+  background: #fafafa;
   color: #222;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.25em;
@@ -24,9 +25,13 @@ main:first-child {
   padding-bottom: 2em;
 }
 img {
-  /*border-radius: 1px;*/
+/*border-radius: 8px;*/
   width: 100%;
 }
+
+/*.workthumb img {
+  border-radius: 12px;
+}*/
 
 .full-width-img {
   margin-top: 2em;
@@ -60,11 +65,15 @@ a:hover {
   text-decoration: underline;
   transition: text-decoration 0.1s, color 0.1s;
 }
+
 a:focus {
   border: none;
   border-bottom: inherit;
 }
 
+.projectdetails a {
+  color: #af0059;
+}
 
 h3{
   font-weight: 600;
@@ -87,16 +96,20 @@ nav ul li {
 }
 
 /* ---------------------------
-Work Page
+Work Pages
 --------------------------- */
 #intro h1{
   font-weight: 300;
 }
 
+.projectdetails li {
+  list-style-position: outside;
+  list-style-type: '\2013\2002';
+}
   div.workthumbs {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2.4em 1.6em;
+  grid-gap: 3.2em 3.2em;
 }
 
 div.projectdetails {
@@ -117,9 +130,10 @@ div.projectdetails {
 }
 
 hr {
-  border: solid 2px #222;
-  max-width: 40%;
-  margin: 4em 0 2em 0;
+  border: solid 1px #222;
+  max-width: 25%;
+  /*max-width: 40%;*/
+  margin: 0 0 2em 0;
 }
 
 #storybook {
@@ -132,11 +146,11 @@ hr {
   }
   div.workthumbs , div.projectdetails {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2.4em 1.6em;
+    /*grid-gap: 3.2em 2.4em;*/
   }
-  hr {
+  /*hr {
     max-width: 25%;
-  }
+  }*/
   #storybook {
     margin-top: 0;
   }
